@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dungeon Crawlers DPS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="panel">
+    <header>
+      <div>
+        <h1>Dungeon Crawlers DPS</h1>
+        <p id="meta">Loading…</p>
+      </div>
+      <div class="pill" id="scope">Current</div>
+    </header>
+    <section class="summary">
+      <div><span>Total</span><strong id="total">0</strong></div>
+      <div><span>DPS</span><strong id="dps">0.0</strong></div>
+      <div><span>Duration</span><strong id="duration">0s</strong></div>
+    </section>
+    <table>
+      <thead><tr><th>Name</th><th>Dmg</th><th>DPS</th><th>%</th><th>Max</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <footer>
+      <button id="scopeCurrent">Current</button>
+      <button id="scopeKill">Last Kill</button>
+      <button id="scopeSession">Session</button>
+      <button id="scopeHigh">High Scores</button>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

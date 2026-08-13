@@ -1,0 +1,84 @@
+:root {
+  --bg: rgba(18, 12, 8, 0.88);
+  --bg2: rgba(34, 23, 14, 0.92);
+  --gold: #d6a64d;
+  --gold2: #8f6230;
+  --text: #f2e7cf;
+  --muted: #bba984;
+  --red: #e46f55;
+  --green: #82d28a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #382314, #080503 70%);
+  color: var(--text);
+  font-family: Georgia, 'Times New Roman', serif;
+  display: grid;
+  place-items: center;
+}
+.panel {
+  width: min(560px, calc(100vw - 24px));
+  border: 2px solid var(--gold2);
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--bg2), var(--bg));
+  box-shadow: 0 18px 60px rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,220,140,.15);
+  overflow: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid rgba(214,166,77,.35);
+  background: linear-gradient(90deg, rgba(102,59,24,.55), rgba(20,12,7,.2));
+}
+h1 { margin: 0; font-size: 20px; letter-spacing: .5px; color: var(--gold); }
+p { margin: 4px 0 0; color: var(--muted); font-size: 12px; }
+.pill {
+  color: #120c08;
+  background: var(--gold);
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(214,166,77,.18);
+}
+.summary div {
+  padding: 10px 12px;
+  background: rgba(0,0,0,.18);
+}
+.summary span { display: block; color: var(--muted); font-size: 11px; text-transform: uppercase; }
+.summary strong { display: block; font-size: 22px; color: var(--text); }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 8px 10px; border-bottom: 1px solid rgba(214,166,77,.14); }
+th { color: var(--gold); font-size: 12px; text-transform: uppercase; text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+td { text-align: right; font-variant-numeric: tabular-nums; }
+tbody tr:nth-child(odd) { background: rgba(255,255,255,.025); }
+tbody tr:first-child td:first-child { color: var(--green); font-weight: 700; }
+footer {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  background: rgba(0,0,0,.18);
+}
+button {
+  flex: 1;
+  color: var(--text);
+  background: rgba(143,98,48,.28);
+  border: 1px solid rgba(214,166,77,.45);
+  border-radius: 6px;
+  padding: 7px 8px;
+  cursor: pointer;
+}
+button:hover { background: rgba(214,166,77,.25); }
+.empty { color: var(--muted); text-align: center; padding: 18px; }

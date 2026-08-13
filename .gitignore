@@ -1,0 +1,18 @@
+node_modules/
+npm-debug.log*
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Runtime state
+/data/
+
+# Local logs and captured EverQuest files
+*.log
+eqlog_*.txt
+
+# Coverage/build output
+coverage/
+dist/
+build/
