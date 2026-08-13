@@ -1,18 +1,33 @@
 {
   "name": "eq-dps-prototype",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "Passive log-only EverQuest Legends DPS parser and browser overlay prototype.",
+  "type": "module",
+  "main": "src/cli.js",
   "scripts": {
     "test": "node --test",
     "parse": "node src/cli.js parse",
     "serve": "node src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module"
+  "keywords": [
+    "everquest",
+    "dps",
+    "parser",
+    "overlay",
+    "combat-log",
+    "eq-legends"
+  ],
+  "author": "James Hartley",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michiganboy/eq-dps-prototype.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michiganboy/eq-dps-prototype/issues"
+  },
+  "homepage": "https://github.com/michiganboy/eq-dps-prototype#readme",
+  "engines": {
+    "node": ">=20"
+  }
 }
